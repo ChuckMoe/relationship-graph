@@ -1,0 +1,16 @@
+@startuml
+:Action;
+:Randomly create/destroy Nodes and Edges;
+repeat :For every node;
+	if (Node is locked) then (no)
+        repeat :For every edge;
+            repeat :For every registered callback;
+                :Execute Callback;
+            repeat while ()
+            :Calculate Mean;
+            :Update Edge;
+        repeat while ()
+        :Process connected Nodes;
+	endif
+repeat while ()
+@enduml

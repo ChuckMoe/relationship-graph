@@ -1,0 +1,24 @@
+@startuml
+class Graph
+class Node
+class Edge
+
+Graph : nodes
+Graph : add_node()
+Graph : remove_node()
+Graph : add_edge()
+Graph : remove_edge()
+Graph : get_edges(node)
+Graph *- Node
+
+Node : edges
+Node : add_edge(node)
+Node : remove_edge(node)
+Node : update_edge()
+Node : update_edges()
+Node *- Edge
+
+Edge : target
+Edge : value
+Edge : update()
+@enduml
